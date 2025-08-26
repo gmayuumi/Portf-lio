@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanna Mayumi | Desenvolvedora Front-End Focada em Conversão</title>
+    <meta name="description" content="Transformo suas ideias em Landing Pages e Websites de alta performance que geram resultados reais. Foco em velocidade, design e SEO para impulsionar seu negócio.">
+    <meta name="author" content="Giovanna Mayumi">
+    <meta name="theme-color" content="#00e5ff">
+    <link rel="icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='45' fill='none' stroke='%2300e5ff' stroke-width='10'/%3e%3cpath d='M68 65 A 25 25, 0, 1, 0, 50 25' fill='none' stroke='%2300e5ff' stroke-width='10' stroke-linecap='round'/%3e%3cline x1='50' y1='50' x2='75' y2='50' stroke='%2300e5ff' stroke-width='10' stroke-linecap='round'/%3e%3c/svg%3e">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+        <nav class="nav container">
+            <div class="nav__group nav__group--left">
+                <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+                <a href="#about" class="nav__link">Sobre Mim</a>
+                <a href="#services" class="nav__link">Soluções</a>
+            </div>
+            <div class="nav__logo-container">
+                <a href="#" class="nav__logo">Giovanna Mayumi</a>
+                <span class="nav__subtitle">FRONT-END DEVELOPER</span>
+            </div>
+            <div class="nav__group nav__group--right">
+                <a href="#projects" class="nav__link">Projetos</a>
+                <a href="#contact" class="nav__link">Contato</a>
+                <i class='bx bx-brush theme-button' id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile__menu" id="mobile-menu">
+        <div class="mobile__close" id="mobile-close"><i class='bx bx-x'></i></div>
+        <ul class="mobile__list">
+            <li><a href="#about" class="mobile__link">Sobre Mim</a></li>
+            <li><a href="#services" class="mobile__link">Soluções</a></li>
+            <li><a href="#projects" class="mobile__link">Projetos</a></li>
+            <li><a href="#testimonials" class="mobile__link">Clientes</a></li>
+            <li><a href="#ideal-for" class="mobile__link">Para Quem É</a></li>
+            <li><a href="#faq" class="mobile__link">Dúvidas</a></li>
+            <li><a href="#contact" class="mobile__link">Contato</a></li>
+        </ul>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <div class="hero__art-container">
+                        <svg class="hero__cyber-core" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="core-gradient-cyan"><stop offset="0%" stop-color="#a1f7ff" /><stop offset="100%" stop-color="#00e5ff" /></linearGradient>
+                                <linearGradient id="core-gradient-purple"><stop offset="0%" stop-color="#c77dff" /><stop offset="100%" stop-color="#9e00ff" /></linearGradient>
+                                <filter id="core-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" result="coloredBlur" /><feMerge><feMergeNode in="coloredBlur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+                            </defs>
+                            <g class="orbital-rings" fill="none" stroke-opacity="0.7">
+                                <circle class="svg-stroke-secondary" cx="250" cy="250" r="180" stroke-width="1" stroke-dasharray="2 10"/>
+                                <circle class="svg-stroke-primary" cx="250" cy="250" r="210" stroke-width="0.5" stroke-dasharray="5 5"/>
+                                <circle class="svg-stroke-light" cx="250" cy="250" r="240" stroke-width="0.3" stroke-dasharray="1 20"/>
+                            </g>
+                            <g class="circuits" fill="none" stroke-width="2" stroke-linecap="round">
+                                <path class="svg-stroke-gradient" d="M 250, 50 V 150" /><path class="svg-stroke-gradient" d="M 250, 450 V 350" /><path class="svg-stroke-gradient" d="M 50, 250 H 150" /><path class="svg-stroke-gradient" d="M 450, 250 H 350" /><path class="svg-stroke-gradient" d="M 127, 127 L 180, 180" /><path class="svg-stroke-gradient" d="M 373, 373 L 320, 320" /><path class="svg-stroke-gradient" d="M 127, 373 L 180, 320" /><path class="svg-stroke-gradient" d="M 373, 127 L 320, 180" />
+                            </g>
+                            <g class="core" filter="url(#core-glow)">
+                                <circle class="svg-stroke-gradient" cx="250" cy="250" r="100" fill="none" stroke-width="4" />
+                                <circle class="svg-stroke-light" cx="250" cy="250" r="80" fill="none" stroke-width="1" stroke-opacity="0.8" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="hero__text">
+                        <h1 class="hero__title">Interfaces que Geram Vendas.</h1>
+                        <p class="hero__subtitle">Eu construo a presença digital da sua marca com código de precisão e design focado em resultados.</p>
+                        <a href="#contact" class="button">Inicie Seu Projeto Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA ORDEM DAS SEÇÕES -->
+        <section class="services section" id="services">
+            <h2 class="section__title container">Soluções que Transformam Sua Ideia em Resultados</h2>
+            <div class="services__container container grid">
+                <div class="service__card">
+                    <i class='bx bx-target-lock service__icon'></i>
+                    <h3 class="service__title">Landing Pages que Vendem</h3>
+                    <p class="service__description">Tem um produto ou serviço para lançar? Crio a página perfeita para transformar visitantes em clientes com um único objetivo: a conversão.</p>
+                </div>
+                <div class="service__card">
+                    <i class='bx bxs-institution service__icon'></i>
+                    <h3 class="service__title">Sites que Geram Confiança</h3>
+                    <p class="service__description">Sua empresa precisa de uma vitrine digital? Desenvolvo um site institucional que transmite autoridade e profissionalismo para sua marca.</p>
+                </div>
+                <div class="service__card">
+                    <!-- ÍCONE CORRIGIDO -->
+                    <i class='bx bx-line-chart service__icon'></i>
+                    <h3 class="service__title">Performance de Verdade</h3>
+                    <p class="service__description">Seu site atual está lento ou não aparece no Google? Faço uma otimização completa para que ele seja rápido, seguro e encontrado por quem precisa.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="process section" id="process">
+            <h2 class="section__title container">Processo Transparente e Eficaz</h2>
+            <div class="process__container container grid">
+                <div class="process__step"><i class='bx bx-message-square-dots process__icon'></i><h3>1. Diagnóstico e Estratégia</h3><p>Realizamos uma imersão no seu negócio para entender suas metas. Juntos, definimos a estratégia ideal para o seu projeto.</p></div>
+                <div class="process__step"><i class='bx bx-code-alt process__icon'></i><h3>2. Design e Desenvolvimento</h3><p>Crio um design de alta fidelidade e o transformo em um site rápido, responsivo e otimizado, mantendo você atualizado em cada etapa.</p></div>
+                <div class="process__step"><i class='bx bx-rocket process__icon'></i><h3>3. Lançamento e Resultados</h3><p>Publico seu novo site e configuro as ferramentas de análise. A partir daqui, seu negócio está pronto para decolar no mundo digital.</p></div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title container">A Arquiteta por Trás do Código</h2>
+            <div class="about__container container grid">
+                <div class="about__content">
+                    <p class="about__description">Olá, sou Giovanna Mayumi, uma desenvolvedora Front-End apaixonada por transformar ideias em realidade digital. Minha especialidade é criar <strong>Landing Pages e Websites de alta conversão</strong>, onde cada linha de código e cada elemento de design trabalham juntos para um único objetivo: gerar resultados para o seu negócio.</p>
+                    <p class="about__description">Todos os meus projetos são construídos sobre três pilares: <strong>performance impecável</strong>, <strong>experiência de usuário intuitiva</strong> e <strong>SEO estratégico</strong>, garantindo que seu site não apenas pareça incrível, mas que também seja encontrado e amado pelo seu público-alvo.</p>
+                     <a href="#services" class="button about__button">Veja como posso ajudar</a>
+                </div>
+                <div class="about__visual-container">
+                    <svg class="about__tech-art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <g class="art__group-1">
+                            <path class="svg-stroke-gradient art__line" d="M50 200 Q 200 50 350 200" stroke-width="2" fill="none" />
+                            <path class="svg-stroke-gradient art__line art__line--2" d="M50 200 Q 200 350 350 200" stroke-width="2" fill="none" />
+                        </g>
+                        <g class="art__group-2">
+                            <circle class="svg-stroke-primary art__pulse-ring" cx="200" cy="200" r="40" stroke-width="4" fill="none" />
+                            <circle class="svg-stroke-light art__pulse-ring art__pulse-ring--delay" cx="200" cy="200" r="50" stroke-width="1" fill="none" />
+                        </g>
+                        <g class="svg-fill-primary art__dots">
+                            <circle cx="50" cy="200" r="4" /><circle cx="350" cy="200" r="4" /><circle cx="200" cy="115" r="3" opacity="0.7" /><circle cx="200" cy="285" r="3" opacity="0.7" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials section" id="testimonials">
+            <h2 class="section__title container">Resultados que Falam por Si</h2>
+            <div class="testimonials__container container grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial__card">
+                   
+                    <p class="testimonial__quote">"Eu estava cética sobre o impacto de uma nova Landing Page, mas a Giovanna mudou minha perspectiva. Em menos de uma semana, ela entregou um projeto que não só ficou lindo, mas aumentou nossos leads qualificados em mais de 30%. Impressionante."</p>
+                    <div class="testimonial__author">
+                        <h4 class="testimonial__name">Mariana C.</h4>
+                        <span class="testimonial__role">Cliente verificado</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial__card">
+                    
+                    <p class="testimonial__quote">"Trabalhar com a Giovanna foi um alívio. Ela tem um processo claro, cumpre prazos e a comunicação é impecável. Finalmente temos um site que transmite a seriedade da nossa marca e nos enche de orgulho."</p>
+                    <div class="testimonial__author">
+                        <h4 class="testimonial__name">Carlos de S.</h4>
+                        <span class="testimonial__role">Cliente verificado</span>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial__card">
+                    
+                    <p class="testimonial__quote">"A Giovanna vai além do código. Ela se tornou uma parceira estratégica, preocupada com nossos resultados. O suporte pós-lançamento e a paciência para nos ensinar a gerenciar o básico foram um diferencial enorme."</p>
+                    <div class="testimonial__author">
+                        <h4 class="testimonial__name">Ana P.</h4>
+                        <span class="testimonial__role">Cliente verificado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects section" id="projects">
+  <h2 class="section__title container">Projetos de Sucesso</h2>
+  
+  <div class="projects__container_wrapper">
+    <div class="projects__container swiper">
+      <div class="swiper-wrapper">
+        <!-- Original Projects -->
+        <!-- Project 1 -->
+        <a href="https://gmayuumi.github.io/ALTUM-Mentoria-Executiva-de-Alta-Performance/" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/5xs65vjv/altum-1.png" alt="Projeto ALTUM." class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">ALTUM.</h3>
+                <span class="project__subtitle">Mentoria Executiva <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://gmayuumi.github.io/EDUMAX-Academy/" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/6Rn1fqsw/edumax.png" alt="Projeto EDUMAX" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">EDUMAX</h3>
+                <span class="project__subtitle">Consultoria de Games <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://gmayuumi.github.io/Alta-Vista-Im-veis/" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/pB5pBwVR/alta-vista.png" alt="Projeto Alta Vista" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">Alta Vista Imóveis</h3>
+                <span class="project__subtitle">Imobiliária <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="https://gmayuumi.github.io/Aesthetica-Brasil/" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/YFWTmcHz/aesthetica.png" alt="Projeto Aesthetica" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">Aesthetica Brasil</h3>
+                <span class="project__subtitle">Consultório de Estética <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="https://gmayuumi.github.io/Fleur-de-Sucre-P-tisserie-de-ateli-/" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/C3ZCn8BH/fleur-1.png" alt="Projeto Fleur de Sucre" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">Fleur de Sucre</h3>
+                <span class="project__subtitle">Patisserie de Ateliê <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="#" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/0yHyw1P8/strategiq.png" alt="Projeto Innovate SaaS" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">STRATEGIQ</h3>
+                <span class="project__subtitle">Marketing Estratégico <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 7 -->
+        <a href="#" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/5WddYQbn/primecar.png" alt="Projeto Quantum Ledger" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">PrimeCar</h3>
+                <span class="project__subtitle">Estética Automotiva <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 8 -->
+        <a href="#" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/gZmxNFdG/sanctuary-pet-shop.png" alt="Projeto Nexus Hub" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">Sanctuary. Pet Wellness</h3>
+                <span class="project__subtitle">Clínica Veterinária <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 9 -->
+        <a href="#" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/DgDN9jxw/elysia-1.png" alt="Projeto Momentum Fitness" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">ELYSIA.</h3>
+                <span class="project__subtitle">Estética de Vanguarda <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 10 -->
+        <a href="#" target="_blank" class="project__link swiper-slide">
+          <div class="project__card">
+            <img src="https://i.ibb.co/qQFtyFS/majestic.png" alt="Projeto Etherea Viagens" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <div class="project__data">
+                <h3 class="project__title">Majestic</h3>
+                <span class="project__subtitle">Barbearia de alto padrão <i class='bx bx-link-external'></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+        <section class="ideal-for section" id="ideal-for"> <h2 class="section__title container">Este serviço é ideal para você se...</h2> <div class="ideal-for__container container grid"> <div class="ideal-for__item"><i class='bx bx-check-shield'></i><span>Você quer <strong>vender mais online</strong> mas não sabe por onde começar.</span></div> <div class="ideal-for__item"><i class='bx bx-check-shield'></i><span>Você precisa de um site que <strong>gere autoridade e confiança</strong> para sua marca.</span></div> <div class="ideal-for__item"><i class='bx bx-check-shield'></i><span>Você tentou criar um site antes, mas ele <strong>não trouxe resultados concretos</strong>.</span></div> <div class="ideal-for__item"><i class='bx bx-check-shield'></i><span>Você busca um parceiro técnico para <strong>cuidar de tudo</strong>, permitindo que você foque no seu negócio.</span></div> </div> </section>
+        <section class="faq section" id="faq"> <h2 class="section__title container">Dúvidas Comuns, Respostas Diretas</h2> <div class="faq__container container grid"> <details class="faq__item"><summary class="faq__question"><span>Quanto tempo leva para meu site ficar pronto?</span><i class='bx bx-chevron-down faq__chevron'></i></summary><p class="faq__answer">Uma Landing Page de alta performance leva de 3 a 5 dias. Um site institucional completo, de 7 a 15 dias. O prazo exato depende da complexidade do seu projeto e será definido de forma transparente na nossa proposta.</p></details> <details class="faq__item"><summary class="faq__question"><span>Preciso já ter um design ou layout?</span><i class='bx bx-chevron-down faq__chevron'></i></summary><p class="faq__answer">Absolutamente não. Posso criar um design exclusivo e de alta conversão para você, alinhado à identidade da sua marca. Se já tiver um layout (em Figma, por exemplo), transformo-o em um site funcional e otimizado com fidelidade total.</p></details> <details class="faq__item"><summary class="faq__question"><span>Você também cuida da publicação do site (hospedagem)?</span><i class='bx bx-chevron-down faq__chevron'></i></summary><p class="faq__answer">Com certeza. O serviço é completo. Cuido de todo o processo técnico, desde a configuração do domínio e da melhor hospedagem para sua necessidade, até a publicação final. Você não precisa se preocupar com nada.</p></details> </div> </section>
+        <section class="contact section" id="contact"> <div class="cta__container container"> <div class="cta__decoration cta__decoration--1"></div> <div class="cta__decoration cta__decoration--2"></div> <h2 class="cta__title">Sua ideia merece sair do papel com excelência digital.</h2> <p class="cta__text">Não deixe sua concorrência sair na frente. A oportunidade de ter uma presença online que gera autoridade e vendas está a uma mensagem de distância. Vamos transformar sua visão em uma experiência digital inesquecível.</p> <a href="https://wa.me/5511948562304?text=Olá,%20Giovanna!%20Vi%20seu%20portfólio%20e%20quero%20transformar%20minha%20ideia%20em%20realidade." target="_blank" class="button cta__button">Fale Comigo Agora no WhatsApp <i class='bx bxl-whatsapp'></i></a> </div> </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Giovanna Mayumi. Todos os direitos reservados. Uma experiência digital construída do zero.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
