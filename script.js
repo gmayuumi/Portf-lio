@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /*=============== MENU HAMBURGER E MOBILE (SOLUÇÃO DEFINITIVA) ===============*/
+    
     const navToggle = document.getElementById('nav-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const navClose = document.getElementById('mobile-close');
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navClose) navClose.addEventListener('click', closeMenu);
     navLinks.forEach(link => link.addEventListener('click', closeMenu));
 
-    /*=============== BOTÃO DE TROCA DE TEMA (CIANO/ROXO) ===============*/
+ 
     const themeButton = document.getElementById('theme-button');
-    const purpleTheme = 'purple-theme'; // A classe CSS para o tema roxo
+    const purpleTheme = 'purple-theme'; 
 
     const selectedTheme = localStorage.getItem('selected-theme');
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /*=============== BARRA DE PROGRESSO DE SCROLL ===============*/
+   
     const progressBar = document.getElementById('scroll-progress-bar');
     if(progressBar) {
         const updateProgressBar = () => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', updateProgressBar);
     }
     
-    /*=============== CARROSSEL DE PROJETOS ===============*/
+   
     if (typeof Swiper !== 'undefined') {
         const swiperProjects = new Swiper('.projects__container', {
             loop: true, spaceBetween: 24, grabCursor: true,
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /*=============== ANIMAÇÕES DE SCROLL (SCROLL REVEAL) ===============*/
+  
     if (typeof ScrollReveal !== 'undefined') {
         const sr = ScrollReveal({
             origin: 'bottom', distance: '40px', duration: 1200, delay: 200,
